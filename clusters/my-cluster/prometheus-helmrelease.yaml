@@ -12,6 +12,9 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: cilium
+  values:
+    hubble:
+      enabled: true
   interval: 10m0s
   releaseName: cilium
   targetNamespace: kube-system
